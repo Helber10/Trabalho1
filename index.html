@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	 
+	<script type="text/javascript">
+		function CADASTRA() {
+			var nome = document.getElementById("nomeid");
+			if (nome.value != "") {
+				alert ('Atleta '  + nome.value +  ' cadastrado com sucesso ');
+			}
+				
+
+			}
+		</script>
+	 
+</head>
+<body>
+	<section>
+		<nav id="nav-topo">
+			<ul>
+				<li><a class="menu"href="#nav-topo">HOME</a></li>
+				<li><a class="menu"href="#nav-expor" >JOGOS</a></li>
+				<li><a class="menu"href="#" >TABELA</a></li>
+			</ul>
+		</nav>
+		<header id="header-top">
+			<h1><marquee>PELADEIROS </marquee></h1>
+		</header>
+		<nav>
+			<section id="box-fomulario">
+				 <form name="Cadastro" method="" action="">
+				 <label for="nome">NOME DO ATLETA</label>
+				  <input type="text" id="nomeid" placeholder="nome" required="required" name="nome"/>	
+                   
+				     <input type="submit" class="cadastra" onclick="CADASTRA();" value="CADASTRAR" />
+				      <input type="reset" class="cancelar" onclick="CANCELAR();" value="CANCELAR" />
+				 </form>
+		</section>
+		</nav>
+		<main>
+		
+
+			<div id="div-tabela"><img class="img-campo1" src="img/campo1.webp"alt="">Time 1</div>	
+			<div id="div-tabela"><img class="img-campo1" src="img/campo1.webp"alt="">Time 2</div>
+			<div id="div-tabela"><img class="img-campo1" src="img/campo1.webp"alt="">Time 3</div>
+		
+		</main>
+		<aside></aside>
+
+		<footer>
+		  
+		 
+	   </footer>
+		   <div id="bt-flex">
+			<a href="https://www.instagram.com" target="_blank">
+				<img class="img-contatos" src="img/instalog.png"/></a>
+					  
+			   <p>Desenvolvido por <a href="https://www.instagram.com" target="_blank"></a>Helber Rodrigues 2023</p>
+		   </div>
+		   <div id="bt-topo">
+			   <a href="https://web.whatsapp.com/" target="_blank">
+			   <img id="img-contato" src="img/whatsapp.png"alt=""></a>
+		   </div>
+
+	</section>
+</body>
+</html>
